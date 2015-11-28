@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp" >
+
+            <com.tacademy.b_meal.login.MLRoundedImageView
+                android:id="@+id/imageRest"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/picture" />
+
+            <ImageView
+                android:id="@+id/imageRing"
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:src="@drawable/ring" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttonDelete"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/myplace_cancel"
+                android:focusable="false"
+                android:text="@null" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textResName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="맛있는 빵집"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#393939"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textResPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:text="신촌/홍대"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#b3b3b3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:text="TextView"
+                    android:textColor="#b3b3b3"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="126dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/greenline" />
+
+</LinearLayout>

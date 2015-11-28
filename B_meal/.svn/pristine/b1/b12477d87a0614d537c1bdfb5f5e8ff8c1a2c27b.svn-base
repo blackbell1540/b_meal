@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_back"
+            android:text="@null" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="네이버 블로그 검색"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/webBlog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="101dp"
+        android:background="#ffffff" >
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp" >
+
+            <com.tacademy.b_meal.login.MLRoundedImageView
+                android:id="@+id/imageRest"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/picture" />
+
+            <ImageView
+                android:id="@+id/imageRing"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ring" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textResName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="맛있는 빵집"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#393939"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textResPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="신촌/홍대"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#66c448"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textAddr"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="주소주소주소"
+                    android:textColor="#b3b3b3"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/theme_runtime_char" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="조회수"
+                    android:textColor="#b3b3b3"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textRuntime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#b3b3b3"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

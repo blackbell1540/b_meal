@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000" >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:text="삭제"
+            android:textColor="#393939"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+            android:text="delete"
+            android:textColor="#393939"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textSubtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#393939"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="140dp"
+                android:layout_height="43dp"
+                android:background="@drawable/button_cancel_selector"
+                android:text="@null" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="140dp"
+                android:layout_height="43dp"
+                android:background="@drawable/button_delete_selector"
+                android:text="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

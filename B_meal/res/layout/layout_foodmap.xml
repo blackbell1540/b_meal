@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/button_back"
+            android:text="@null" />
+
+        <TextView
+            android:id="@+id/textMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="지도"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout2"
+        android:layout_width="360dp"
+        android:layout_height="109dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="126dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/greenline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <com.tacademy.b_meal.login.MLRoundedImageView
+                    android:id="@+id/imageThumbnail"
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rest_example_picture" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="87dp"
+                    android:layout_height="87dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ring" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textColor="#393939"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="dsfadadsfasdafsf"
+                    android:textColor="#898989"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#898989"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.skp.Tmap.TMapView
+            android:id="@+id/mapRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.skp.Tmap.TMapView>
+
+        <ImageView
+            android:id="@+id/buttonMyLocation"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/gps_not_tap" />
+
+        <ImageView
+            android:id="@+id/buttonPath"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/calorie_not_tap" />
+
+    </FrameLayout>
+
+</LinearLayout>

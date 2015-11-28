@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/option_back" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="33dp"
+                    android:src="@drawable/option_default_profile" />
+
+                <com.tacademy.b_meal.login.MLRoundedImageView
+                    android:id="@+id/imageUserProfile"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="37dp"
+                    android:src="@null" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:text="동그라미를 클릭하여 로그인!"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="건강한 외식의 비밀을 알려드립니다"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:id="@+id/Frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/katalk"
+                        android:layout_width="360dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="36dp"
+                        android:background="@drawable/option_bar" >
+
+                        <TextView
+                            android:id="@+id/textKatalk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:paddingLeft="15dp"
+                            android:text="카카오톡으로 초대하기"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/go" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/option_bar" >
+
+                        <TextView
+                            android:id="@+id/textOpinion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:paddingLeft="15dp"
+                            android:text="의견 보내기"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/ImageView01"
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/go" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/modi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/option_bar" >
+
+                        <TextView
+                            android:id="@+id/textModiAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:paddingLeft="15dp"
+                            android:text="계정 정보 수정"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/go" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ButtonAfterLogin"
+                    android:layout_width="360dp"
+                    android:layout_height="129dp"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:clickable="false"
+                    android:text="로그인 후 이용가능합니다"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_bar" >
+
+                <TextView
+                    android:id="@+id/textNotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:text="공지사항"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/go" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/option_bar" >
+
+                <TextView
+                    android:id="@+id/textHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:text="도움말"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/go" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/option_bar" >
+
+                <TextView
+                    android:id="@+id/textTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:text="이용약관"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/go" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="#4dffffff"
+                android:text="로그아웃"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

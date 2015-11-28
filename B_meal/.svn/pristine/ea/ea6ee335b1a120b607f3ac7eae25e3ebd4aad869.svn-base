@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/option_back"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@null" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/button_back2"
+            android:text="@null" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="146dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/titleJoin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout2"
+        android:layout_width="259dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="39dp"
+        android:background="@drawable/name" >
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="닉네임(2-10자 이내, 한글 영문 가능)"
+            android:nextFocusDown="@+id/editEmail"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#66ffffff"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout3"
+        android:layout_width="259dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/icon_email" >
+
+        <EditText
+            android:id="@id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="E-mail 입력"
+            android:nextFocusDown="@+id/editPassword"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#66ffffff"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout4"
+        android:layout_width="259dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/password_join" >
+
+        <EditText
+            android:id="@id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="비밀번호 (8자 이상, 영문  &amp; 숫자 혼합)"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/editBirth"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#66ffffff"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="119dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginRight="21dp"
+            android:button="@drawable/male_selector"
+            android:checked="true"
+            android:text="@null" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="119dp"
+            android:layout_height="32dp"
+            android:button="@drawable/female_selector"
+            android:text="@null" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout5"
+        android:layout_width="259dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/day" >
+
+        <EditText
+            android:id="@+id/editBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="생년월일 8자리 입력 ex)19960111"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#66ffffff"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="34dp" >
+
+        <TextView
+            android:id="@+id/textTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/term"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/checkTerms"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="51dp"
+            android:button="@drawable/termcheck_selector"
+            android:text="@null" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_join_ok"
+        android:text="@null" />
+
+</LinearLayout>

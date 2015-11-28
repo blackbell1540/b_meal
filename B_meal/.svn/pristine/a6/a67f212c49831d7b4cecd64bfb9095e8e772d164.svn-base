@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="360dp"
+    android:layout_height="104dp" >
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="104dp"
+        android:background="#f2ffffff" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ring" />
+
+            <com.tacademy.b_meal.login.MLRoundedImageView
+                android:id="@+id/imageRest"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/rest_example_picture" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#393939"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#898989"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#898989"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonWhere"
+                android:layout_width="65dp"
+                android:layout_height="29dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/button"
+                android:focusable="false"
+                android:text="위치보기"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonPath"
+                android:layout_width="65dp"
+                android:layout_height="29dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button"
+                android:focusable="false"
+                android:text="길찾기"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="95dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/greenline" />
+
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/option_back"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_back"
+            android:text="@null" />
+
+    </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="207dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="138dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/login_picture" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:src="@drawable/white_ring" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/login_str1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/login_str2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="360dp"
+            android:layout_height="168dp"
+            android:layout_gravity="bottom"
+            android:background="#4dffffff"
+            android:scaleType="fitXY"
+            android:src="@null" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonFacebookLogin"
+        android:layout_width="288dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/login_facebook"
+        android:text="@null" />
+
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="288dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/login_email"
+        android:text="@null" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_login"
+        android:text="@null" />
+
+</LinearLayout>
